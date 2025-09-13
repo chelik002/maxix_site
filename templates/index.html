@@ -5,14 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mini App</title>
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
       background: #071029;
     }
+    .wrapper {
+      width: 1170px; /* исходная ширина макета */
+      height: 2532px; /* исходная высота макета */
+      transform-origin: top left;
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+    function scaleContent() {
+      const wrapper = document.querySelector('.wrapper');
+      const scale = window.innerWidth / 1170; // масштаб по ширине экрана
+      wrapper.style.transform = `scale(${scale})`;
+    }
+    window.addEventListener('resize', scaleContent);
+    window.addEventListener('load', scaleContent);
+  </script>
 
     .container {
       width: 100%;
