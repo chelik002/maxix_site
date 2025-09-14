@@ -1,374 +1,108 @@
-.frame{
-  width:100%;
-  max-width:1170px; 
-  margin:0 auto;
-  padding:18px;
-  position:relative;
+.frame {
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;
 }
 
-.frame .div {
-  background-color: #071029;
-  width: 100%;     
-  height: auto;      
-  aspect-ratio: 9/16; 
-  position: relative;
-}
-
-.frame .element {
-  position: absolute;
-  width: 1104px;
-  height: 300px;
-  top: 915px;
-  left: 33px;
-}
-
-.frame .overlap {
-  position: relative;
-  width: 1134px;
-  height: 316px;
-  top: -15px;
-  left: -15px;
-  background-color: #2939663d;
-  border-radius: 34px;
-}
-
-.frame .view {
-  position: absolute;
-  width: 532px;
-  height: 286px;
-  top: 15px;
-  left: 587px;
-  border-radius: 21px;
-  overflow: hidden;
-  background: linear-gradient(
-    321deg,
-    rgba(15, 33, 48, 1) 0%,
-    rgba(51, 47, 108, 1) 100%
-  );
-}
-
-.frame .text-wrapper {
-  width: 334px;
-  height: 77px;
-  top: 25px;
-  left: 29px;
-  color: var(--text);
-  font-size: clamp(18px, 5vw, 32px);
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-2 {
-  height: 210px;
-  top: 120px;
-  left: 286px;
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: clamp(48px, 10vw, 64px);
-  white-space: nowrap;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .overlap-group-wrapper {
-  position: absolute;
-  width: 532px;
-  height: 286px;
-  top: 15px;
-  left: 15px;
-  border-radius: 21px;
-  overflow: hidden;
-  background: linear-gradient(
-    321deg,
-    rgba(15, 33, 48, 1) 0%,
-    rgba(51, 47, 108, 1) 100%
-  );
-}
-
-.frame .overlap-group {
-  position: relative;
-  width: 467px;
-  height: 330px;
-  top: 25px;
-  left: 29px;
-}
-
-.frame .text-wrapper-3 {
-  width: 442px;
-  height: 154px;
-  top: 0;
-  left: 0;
-  color: var(--text);
-  font-size: clamp(18px, 5vw, 32px);
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
 .frame .text-wrapper-4 {
-  height: 230px;
-  top: 100px;
-  left: 237px;
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: clamp(60px, 12vw, 120px);
-  white-space: nowrap;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
+opacity: 0.5;
+color: #ffffff;
+font-size: clamp(60px, 12vw, 120px);
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;
 }
 
-.frame .overlap-wrapper {
-  position: absolute;
-  width: 1124px;
-  height: 679px;
-  top: 196px;
-  left: 23px;
-}
 
+/* Кнопки */
 .frame .overlap-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* три кнопки в ряд */
-  gap: 16px;
-  padding: 16px;
-  background-color: #2939663d;
-  border-radius: 20px;
+width: 100%;
+background-color: #2939663d;
+border-radius: 20px;
+padding: 16px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 16px;
+box-sizing: border-box;
 }
 
-.frame .view-2 {
-  border-radius: 16px;
-  overflow: hidden;
-  background: linear-gradient(
-    321deg,
-    rgba(15, 33, 48, 1) 0%,
-    rgba(51, 47, 108, 1) 100%
-  );
-  display: flex;                /* включаем flex внутри */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  min-height: 120px;            /* вместо фиксированных 659px/320px */
-}
 
-.frame .text-wrapper-5 {
-  height: 400px;
-  top: 237px;
-  left: 179px;
-  transform: rotate(-11.00deg);
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: clamp(100px, 20vw, 200px);
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-6 {
-  width: 304px;
-  height: 154px;
-  top: 25px;
-  left: 29px;
-  color: var(--text);
-  font-size: clamp(14px, 3.5vw, 24px);
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .view-3 {
-  border-radius: 16px;
-  overflow: hidden;
-  background: linear-gradient(
-    321deg,
-    rgba(15, 33, 48, 1) 0%,
-    rgba(51, 47, 108, 1) 100%
-  );
-  display: flex;                /* включаем flex внутри */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  min-height: 120px;            /* вместо фиксированных 659px/320px */
-}
-
-.frame .text-wrapper-7 {
-  height: 270px;
-  top: 110px;
-  left: 240px;
-  opacity: 0.5;
-  color: #000000;
-  font-size: clamp(12px, 2vw, 16px);
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-8 {
-  width: 422px;
-  height: 77px;
-  top: 25px;
-  left: 29px;
-  color: var(--text);
-  font-size: clamp(12px, 1.8vw, 15px);
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
+.frame .view-2,
+.frame .view-3,
 .frame .view-4 {
-  border-radius: 16px;
-  overflow: hidden;
-  background: linear-gradient(
-    321deg,
-    rgba(15, 33, 48, 1) 0%,
-    rgba(51, 47, 108, 1) 100%
-  );
-  display: flex;                /* включаем flex внутри */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  min-height: 120px;            /* вместо фиксированных 659px/320px */
+border-radius: 16px;
+background: linear-gradient(321deg, rgba(15, 33, 48, 1) 0%, rgba(51, 47, 108, 1) 100%);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+min-height: 120px;
+gap: 10px;
 }
 
+
+.frame .text-wrapper-5,
+.frame .text-wrapper-7,
 .frame .text-wrapper-9 {
-  height: 230px;
-  top: 144px;
-  left: 259px;
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: clamp(11px, 1.6vw, 14px);
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
+opacity: 0.5;
+font-size: clamp(60px, 15vw, 120px);
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;
+text-align: center;
 }
 
+
+.frame .text-wrapper-6,
+.frame .text-wrapper-8,
 .frame .text-wrapper-10 {
-  width: 428px;
-  height: 77px;
-  top: 24px;
-  left: 29px;
-  color: var(--text);
-  font-size: clamp(10px, 1.4vw, 13px);
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
+color: var(--text);
+font-size: clamp(14px, 4vw, 20px);
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;
+text-align: center;
 }
 
+
+/* Верхняя панель с фото и балансом */
 .frame .div-wrapper {
-  position: absolute;
-  width: 1130px;
-  height: 100px;
-  top: 38px;
-  left: 20px;
+width: 100%;
+background-color: #2939663d;
+border-radius: 20px;
+padding: 12px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
 }
 
-.frame .overlap-3 {
-  position: relative;
-  height: 127px;
-  top: -14px;
-  background-color: #2939663d;
-  border-radius: 34px;
-}
 
 .frame .photo {
-  position: relative; /* убираем absolute, чтобы фото могло адаптироваться */
-  width: clamp(120px, 40vw, 295px); /* делаем "резиновую" ширину */
-  height: auto; /* чтобы сохранялись пропорции */
-  aspect-ratio: auto; /* можно убрать, оно само подтянется */
-  border-radius: 50%; /* если хочешь круглое фото */
-  margin: 14px auto; /* центрируем вертикально с отступом сверху */
-  display: block; /* чтобы margin: auto работал */
+width: clamp(80px, 20vw, 120px);
+height: auto;
+border-radius: 50%;
 }
+
 
 .frame .div-2 {
-  position: absolute;
-  width: 256px;
-  height: 94px;
-  top: 17px;
-  left: 780px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
 }
 
-.frame .dollar-account {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 0;
-  left: 207px;
-  aspect-ratio: 1;
-}
 
-.frame .text-wrapper-11 {
-  position: absolute;
-  width: 195px;
-  height: 45px;
-  top: 2px;
-  left: 2px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: var(--text);
-  font-size: clamp(9px, 1.2vw, 12px);
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .p {
-  width: 201px;
-  height: 45px;
-  top: 49px;
-  left: 0;
-  color: var(--text);
-  font-size: 32px;
-  text-align: right;
-  position: absolute;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .repeat {
-  position: absolute;
-  width: 41px;
-  height: 45px;
-  top: 47px;
-  left: 211px;
-}
-
+.frame .dollar-account,
+.frame .repeat,
 .frame .settings {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 39px;
-  left: 1060px;
+width: clamp(24px, 6vw, 40px);
+height: auto;
+}
+
+
+.frame .text-wrapper-11,
+.frame .p {
+color: var(--text);
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;
+font-size: clamp(12px, 3vw, 18px);
+text-align: right;
 }
