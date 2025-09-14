@@ -1,3 +1,7 @@
+:root {
+  --text: #ffffff;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -5,62 +9,193 @@ body, html {
   height: 100%;
   background: #071029;
   font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  color: var(--text);
 }
 
 .frame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vh;
-  padding: 2vh 2vw;
-  box-sizing: border-box;
+  background-color: #071029;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.frame .div {
+  background-color: #071029;
+  width: 95%;
+  height: auto;
+  position: relative;
+}
+
+/* =================== Блок 1: Полезные ссылки / Контакты =================== */
+
+.frame .element {
+  position: absolute;
+  width: 95%;
+  height: 12vh;
+  top: 36vh;
+  left: 2.5%;
+}
+
+.frame .overlap {
+  position: relative;
   width: 100%;
   height: 100%;
+  background-color: #2939663d;
+  border-radius: 2vw;
 }
 
-.div-wrapper {
+.frame .view {
+  position: absolute;
+  width: 47%;
+  height: 85%;
+  top: 7%;
+  left: 51%;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  background: linear-gradient(321deg, rgba(15,33,48,1) 0%, rgba(51,47,108,1) 100%);
+}
+
+.frame .text-wrapper {
+  top: 10%;
+  left: 8%;
+  font-size: clamp(18px, 4vw, 48px);
+  position: absolute;
+}
+
+.frame .text-wrapper-2 {
+  bottom: 5%;
+  right: 5%;
+  opacity: 0.5;
+  font-size: clamp(50px, 15vw, 120px);
+  position: absolute;
+}
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  width: 47%;
+  height: 85%;
+  top: 7%;
+  left: 3%;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  background: linear-gradient(321deg, rgba(15,33,48,1) 0%, rgba(51,47,108,1) 100%);
+}
+
+.frame .text-wrapper-3 {
+  top: 10%;
+  left: 8%;
+  font-size: clamp(18px, 4vw, 48px);
+  position: absolute;
+}
+
+.frame .text-wrapper-4 {
+  bottom: 5%;
+  right: 5%;
+  opacity: 0.5;
+  font-size: clamp(50px, 15vw, 120px);
+  position: absolute;
+}
+
+/* =================== Блок 2: Сделать заказ / Мои заказы / Калькулятор =================== */
+
+.frame .overlap-wrapper {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  top: 8vh;
+  left: 2.5%;
+}
+
+.frame .overlap-2 {
+  position: relative;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #2939663d;
-  border-radius: 20px;
-  padding: 1vh 2vw;
-}
-
-.photo {
-  height: 8vh;
-  object-fit: contain;
-}
-
-.div-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: clamp(14px, 2vw, 20px);
-  color: var(--text, #fff);
-}
-
-.settings {
-  width: 6vh;
-  height: 6vh;
-  object-fit: contain;
-}
-
-.element,
-.overlap-wrapper {
-  width: 100%;
+  padding: 2vh 2vw;
+  background-color: #2939663d;
+  border-radius: 2vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2vw;
 }
 
-.view, .view-2, .view-3, .view-4 {
-  background: linear-gradient(321deg, rgba(15, 33, 48, 1) 0%, rgba(51, 47, 108, 1) 100%);
-  border-radius: 21px;
-  padding: 2vh 2vw;
-  color: var(--text, #fff);
-  font-size: clamp(18px, 3vw, 32px);
-  position: relative;
+.frame .view-2,
+.frame .view-3,
+.frame .view-4 {
+  border-radius: 1.5vw;
   overflow: hidden;
+  background: linear-gradient(321deg, rgba(15,33,48,1) 0%, rgba(51,47,108,1) 100%);
+  padding: 2vh 2vw;
+  position: relative;
+}
+
+.frame .text-wrapper-5,
+.frame .text-wrapper-7,
+.frame .text-wrapper-9 {
+  opacity: 0.5;
+  font-size: clamp(60px, 15vw, 140px);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.frame .text-wrapper-6,
+.frame .text-wrapper-8,
+.frame .text-wrapper-10 {
+  font-size: clamp(18px, 4vw, 48px);
+  position: absolute;
+  top: 8%;
+  left: 6%;
+}
+
+/* =================== Верхняя панель =================== */
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  top: 2vh;
+  left: 2.5%;
+}
+
+.frame .overlap-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  background-color: #2939663d;
+  border-radius: 2vw;
+}
+
+.frame .photo {
+  height: 8vh;
+  object-fit: contain;
+}
+
+.frame .div-2 {
+  text-align: right;
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.frame .dollar-account {
+  height: 2vh;
+  object-fit: contain;
+}
+
+.frame .text-wrapper-11 {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.frame .p {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.frame .repeat {
+  height: 3vh;
+  object-fit: contain;
+}
+
+.frame .settings {
+  height: 5vh;
+  object-fit: contain;
 }
