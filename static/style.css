@@ -1,8 +1,29 @@
+:root {
+  --text: #ffffff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #071029;
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  color: var(--text);
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  gap: 2vh;
+}
+
 /* ===== Верхняя панель ===== */
 .frame .div-wrapper {
-  position: relative;
   width: 95%;
-  margin: 2vh auto;
 }
 
 .frame .overlap-3 {
@@ -25,15 +46,33 @@
   flex: 1;
 }
 
+.frame .dollar-account {
+  height: 2vh;
+  object-fit: contain;
+}
+
+.frame .text-wrapper-11 {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.frame .p {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.frame .repeat {
+  height: 3vh;
+  object-fit: contain;
+}
+
 .frame .settings {
   height: 5vh;
   margin-left: 1vw;
+  object-fit: contain;
 }
 
 /* ===== Блок заказов ===== */
 .frame .overlap-wrapper {
   width: 95%;
-  margin: 2vh auto;
   background-color: #2939663d;
   border-radius: 2vw;
   padding: 2vh 2vw;
@@ -43,18 +82,74 @@
   gap: 2vw;
 }
 
-.view-2 { grid-column: 1 / 2; grid-row: 1; }
-.view-3 { grid-column: 2 / 3; grid-row: 1; }
-.view-4 { grid-column: 1 / 3; grid-row: 2; }
+.frame .view-2,
+.frame .view-3,
+.frame .view-4 {
+  border-radius: 1.5vw;
+  overflow: hidden;
+  background: linear-gradient(321deg, rgba(15,33,48,1) 0%, rgba(51,47,108,1) 100%);
+  padding: 2vh 2vw;
+  position: relative;
+  min-height: 15vh;
+}
+
+.frame .view-2 { grid-column: 1 / 2; grid-row: 1; }
+.frame .view-3 { grid-column: 2 / 3; grid-row: 1; }
+.frame .view-4 { grid-column: 1 / 3; grid-row: 2; }
+
+.frame .text-wrapper-5,
+.frame .text-wrapper-7,
+.frame .text-wrapper-9 {
+  opacity: 0.3;
+  font-size: clamp(50px, 15vw, 120px);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.frame .text-wrapper-6,
+.frame .text-wrapper-8,
+.frame .text-wrapper-10 {
+  font-size: clamp(18px, 4vw, 32px);
+  position: absolute;
+  top: 8%;
+  left: 6%;
+}
 
 /* ===== Блок ссылок ===== */
 .frame .element {
   width: 95%;
-  margin: 2vh auto;
   background-color: #2939663d;
   border-radius: 2vw;
   padding: 2vh 2vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2vw;
+}
+
+.frame .view,
+.frame .overlap-group-wrapper {
+  border-radius: 1.5vw;
+  overflow: hidden;
+  background: linear-gradient(321deg, rgba(15,33,48,1) 0%, rgba(51,47,108,1) 100%);
+  padding: 2vh 2vw;
+  position: relative;
+  min-height: 12vh;
+}
+
+.frame .text-wrapper,
+.frame .text-wrapper-3 {
+  font-size: clamp(18px, 4vw, 32px);
+  position: absolute;
+  top: 8%;
+  left: 6%;
+}
+
+.frame .text-wrapper-2,
+.frame .text-wrapper-4 {
+  opacity: 0.3;
+  font-size: clamp(50px, 15vw, 120px);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
