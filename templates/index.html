@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <title>Панель управления</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styleguide.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-    <div class="frame">
+    <main class="frame">
       <div class="div">
-        <div class="element">
-          <div class="overlap">
-            <div class="view">
-              <div class="text-wrapper">Контакты</div>
-              <div class="text-wrapper-2">👤</div>
-            </div>
-            <div class="overlap-group-wrapper">
-              <div class="overlap-group">
-                <div class="text-wrapper-3">Полезные ссылки</div>
-                <div class="text-wrapper-4">🔗</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overlap-wrapper">
-          <div class="overlap-2">
-            <div class="view-2">
-              <div class="text-wrapper-5">🛒</div>
-              <div class="text-wrapper-6">Сделать заказ</div>
-            </div>
-            <div class="view-3">
-              <div class="text-wrapper-7">📋</div>
-              <div class="text-wrapper-8">Мои заказы</div>
-            </div>
-            <div class="view-4">
-              <div class="text-wrapper-9">🧮</div>
-              <div class="text-wrapper-10">Калькулятор</div>
-            </div>
-          </div>
-        </div>
-        <div class="div-wrapper">
+        <header class="div-wrapper">
           <div class="overlap-3">
-            <img class="photo" src="{{ url_for('static', filename='img/photo_2025-09-13_00-35-56_1.png') }}" />
+            <img class="photo" src="{{ url_for('static', filename='img/photo_2025-09-13_00-35-56_1.png') }}" alt="Логотип компании" />
             <div class="div-2">
-              <img class="dollar-account" src="{{ url_for('static', filename='img/Dollar-Account.png') }}" />
+              <img class="dollar-account" src="{{ url_for('static', filename='img/Dollar-Account.png') }}" alt="Иконка валюты" />
               <div class="text-wrapper-11">600 ¥</div>
               <p class="p">1 ¥ = 12.32 ₽</p>
-              <img class="repeat" src="{{ url_for('static', filename='img/Repeat.png') }}" />
+              <img class="repeat" src="{{ url_for('static', filename='img/Repeat.png') }}" alt="Курс валюты" />
             </div>
-            <img class="settings" src="{{ url_for('static', filename='img/Settings.png') }}" />
+            <button class="settings" type="button" aria-label="Настройки">
+              <img src="{{ url_for('static', filename='img/Settings.png') }}" alt="" />
+            </button>
           </div>
-        </div>
+        </header>
+        <nav class="overlap-wrapper">
+          <div class="overlap-2">
+            <button class="view-2" type="button">
+              <div class="text-wrapper-5" aria-hidden="true">🛒</div>
+              <div class="text-wrapper-6">Сделать заказ</div>
+            </button>
+            <button class="view-3" type="button">
+              <div class="text-wrapper-7" aria-hidden="true">📋</div>
+              <div class="text-wrapper-8">Мои заказы</div>
+            </button>
+            <button class="view-4" type="button">
+              <div class="text-wrapper-9" aria-hidden="true">🧮</div>
+              <div class="text-wrapper-10">Калькулятор</div>
+            </button>
+          </div>
+        </nav>
+        <nav class="element">
+          <div class="overlap">
+            <button class="view" type="button">
+              <div class="text-wrapper">Контакты</div>
+              <div class="text-wrapper-2" aria-hidden="true">👤</div>
+            </button>
+            <div class="overlap-group-wrapper">
+              <button class="overlap-group" type="button">
+                <div class="text-wrapper-3">Полезные ссылки</div>
+                <div class="text-wrapper-4" aria-hidden="true">🔗</div>
+              </button>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
+    </main>
   </body>
 </html>
-
