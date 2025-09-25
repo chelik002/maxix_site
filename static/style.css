@@ -1,9 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* убираем горизонтальный скролл */
+}
+
 .frame {
   background-color: #071029;
   display: grid;
   justify-items: center;
   align-items: start;
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box; /* чтобы паддинги не раздували */
 }
 
 .frame .div {
@@ -384,9 +393,9 @@
 
 .repeat img,
 .settings img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .view-2,
